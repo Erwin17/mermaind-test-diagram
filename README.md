@@ -29,7 +29,6 @@ graph TD;
 
     V --> W[Mostrar resumen de la operación]
     W --> X[Subir Logstash]
-    X --> Y[Iniciar servicio Logstash]
-    Y --> Z[Fin]
+    X --> Y[Fin]
     
 ```
