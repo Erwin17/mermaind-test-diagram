@@ -12,7 +12,7 @@ graph TD;
     F -->|No| H[Finalizar con error]
     G --> I[Detener servicio Logstash]
     I --> J[Modificar pipeline para apuntar al nuevo índice]
-    J --> K[Modificar YML de pipeline]
+    J --> K[Renombrar YML de pipeline]
     K --> L[Ejecutar consulta de base de datos para obtener cantidad de registros nuevos]
     L --> M{Cantidad de registros nuevos válida?}
     M -->|Sí| N[Ejecutar consulta de base de datos para obtener cantidad de registros usados]
