@@ -21,12 +21,12 @@ graph TD;
     O1 -->|Sí| P[Iniciar servicio Logstash]
     O1 -->|No| Q[Restaurar estado anterior y finalizar con error]
     P --> R[Ciclo de validación de sincronización de índices]
-    Q --> R
+
     R --> S{Sincronización exitosa?}
     S -->|Sí| T[Cambiar alias del índice]
     S -->|No| U[Restaurar estado anterior y finalizar con error]
     T --> V[Finalizar con éxito]
-    U --> V
+
     V --> W[Mostrar resumen de la operación]
     W --> X[Subir Logstash]
     X --> Y[Iniciar servicio Logstash]
