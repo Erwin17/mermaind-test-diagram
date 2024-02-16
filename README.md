@@ -19,7 +19,7 @@ graph TD;
     M -->|No| O[Restaurar estado anterior y finalizar con error]
     N --> O1{Cantidad de registros usados válida?}
     O1 -->|Sí| P[Iniciar servicio Logstash]
-    O1 -->|No| QQ[Restaurar estado anterior y finalizar con error]
+    O1 -->|No| Q[Restaurar estado anterior y finalizar con error]
     P --> R[Ciclo de validación de sincronización de índices]
     Q --> R
     R --> S{Sincronización exitosa?}
